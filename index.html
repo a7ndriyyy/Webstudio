@@ -32,8 +32,64 @@
                     <li class="link menu-list"><a class="list-link email link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="link menu-list"><a class="list-link email link" href="tel:+110001111111">+11 (000) 111-11-11 </a></li>
                </ul>
-          </address>   
-      
+          </address>    
+          <button type="button" class="mobile-btn" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
+               <svg class="menu-burger" width="32" height="22">
+                 <use href="./images/icons.svg#icon-menu-burger"></use>
+               </svg>
+             </button>
+             <div class="menu-container js-menu-container" id="mobile-menu" js-menu-container>
+               <button class="menu-toggle js-close-menu" js-close-menu>
+                    <svg class="svg-btn" width="8" height="8">
+                      <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+           <ul class="mobile-menu">
+             <li>
+               <a href="" class="link">Studio</a></li>
+             <li>
+               <a href="" class="link">Portfolio</a></li>
+             <li>
+               <a href="" class="link">Contacts</a></li>
+           </ul>
+           <ul class="mobile-contacts">
+               <li>
+                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+               </li>
+               <li>
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               </li>
+           </ul>
+           <ul class="list social-list">
+               <li class="li-footer">
+                 <a href="" class="link link-footer">
+                   <svg class="footer-icon" width="24" height="24">
+                     <use href="./images/icons.svg#icon-instagram"></use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="li-footer">
+                 <a href="" class="link link-footer">
+                   <svg class="footer-icon" width="24" height="24">
+                     <use href="./images/icons.svg#icon-twitter"></use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="li-footer">
+                 <a href="" class="link link-footer">
+                   <svg class="footer-icon" width="24" height="24">
+                     <use href="./images/icons.svg#icon-facebook"></use>
+                   </svg>
+                 </a>
+               </li>
+               <li class="li-footer">
+                 <a href="" class="link link-footer">
+                   <svg class="footer-icon" width="24" height="24">
+                     <use href="./images/icons.svg#icon-linkedin"></use>
+                   </svg>
+                 </a>
+               </li>
+             </ul>
+         </div>
      </div>
      </header>
      <main>
@@ -93,8 +149,8 @@
                   </div>
           </div>
           </section>
-          <!-- Strategy -->
-          <section class="section">
+          <!-- Strategy  -->
+          <!-- <section class="section">
                <div class="container">
             <h2 class="visually-hidden">Strategy</h2>
                <ul class="list need-info">
@@ -137,9 +193,9 @@
                     </li>
                </ul>
           </div>
-          </section>
+          </section> -->
           <!-- what are we doing -->
-          <section class="section-do">
+          <!-- <section class="section-do">
                <div class="container">
                <h2 class="text">What are we doing</h2>
                <ul class="list do-this">
@@ -154,13 +210,13 @@
                     </li>
                </ul>
           </div>
-          </section>
+          </section> -->
           <!-- our team -->
-          <section class="section-team">
+          <!-- <section class="section-team">
                <div class="container">
                <h2 class="team-text">Our Team</h2>
                <ul class="list cool-teams">
-                    <!-- mark -->
+                    mark
                     <li class="goit-team">
                          <img src="./images/markguerrero.jpg" alt="Mark Guerrero" width="264">
                <div class="div-team">
@@ -198,7 +254,7 @@
                     </ul>
                </div>
                     </li>
-                    <!-- tom -->
+                    tom
                     <li class="goit-team">
                          <img src="./images/tomford.jpg" alt="Tom Ford" width="264">
                <div class="div-team">
@@ -236,7 +292,7 @@
                     </ul>
                </div>
                     </li>
-                    <!-- camila -->
+                    camila
                     <li class="goit-team">
                          <img src="./images/camilagarcia.jpg" alt="Camila Garcia" width="264">
                <div class="div-team">
@@ -274,7 +330,7 @@
                     </ul>
                </div>
                     </li>
-                    <!-- danilko -->
+                    danilko
                     <li class="goit-team">
                          <img src="./images/danielwilson.jpg" alt="Daniel Wilson" width="264">
                <div class="div-team">
@@ -314,12 +370,12 @@
                     </li>
                </ul>
           </div>
-          </section>
+          </section> -->
           
           <!-- Icons section -->
-          
-          <section class="icons-section">
-               <div class="container">
+<!--           
+          <!-- <section class="icons-section"> -->
+               <!-- <div class="container">
                     <h2 class="customers-title">Customers</h2>
                     <ul class="list icons-list">
                          <li class="icons">
@@ -423,8 +479,16 @@
                </form>
              </div>
      </div>
-     </footer>
-     <script src="./js/modal.js"></script>
+     </footer> -->
+       <script src="./js/modal.js"></script> 
+       <!-- script mobile -->
+       <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
-</html>
+</html> 
 

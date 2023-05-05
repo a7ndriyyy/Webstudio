@@ -40,13 +40,16 @@ ul {
 }
   /* container */
 .container{
-    margin: auto;
-    width: 1158px;
+    /* Phone Styless and >>> */
+    min-width: 320px;
+    max-width: 428px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 15px;
+    padding-left:  16px;
+    padding-right: 16px;
    outline-offset: -2px;
 }
+
 
 .div-container{
     display: flex;
@@ -237,7 +240,7 @@ img{
     font-size: 18px;
     line-height: 1.17 ;
     margin-right: 76px
-   
+    
 }
 .logo-item{
     font-family: "Raleway", sans-serif;
@@ -920,4 +923,100 @@ height: 40px;
   }
 .icon-send{
     fill: #f4f4fd;
+}
+/* MObile CSS */
+.mobile-btn{
+    background-color: transparent;
+    border: none;
+    letter-spacing: 0;
+}
+.menu-burger{
+    stroke: var(--navy-blue);
+}
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  @media only screen and ( max-width: 767px) {
+    .menu{
+     display: none;
+    }
+    .address{
+        display: none;
+    }
+  }
+
+/* Tablet Styless and >>> */
+@media only screen and ( min-width: 768px) {
+    .container{
+   max-width: 735px;
+    }
+}
+
+/* Dekstop Styless and >>> */
+@media only screen and ( min-width: 1200px) {
+    .container{
+        max-width: 1159px;
+    }
 }
