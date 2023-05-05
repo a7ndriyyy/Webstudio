@@ -33,30 +33,35 @@
                     <li class="link menu-list"><a class="list-link email link" href="tel:+110001111111">+11 (000) 111-11-11 </a></li>
                </ul>
           </address>    
-          <button type="button" class="mobile-btn" aria-expanded="false" aria-controls="mobile-menu" js-open-menu>
+          <button class="mobile-btn" type="button" data-menu-open>
                <svg class="menu-burger" width="32" height="22">
                  <use href="./images/icons.svg#icon-menu-burger"></use>
                </svg>
              </button>
-             <div class="menu-container js-menu-container" id="mobile-menu" js-menu-container>
-               <button class="menu-toggle js-close-menu" js-close-menu>
+          </div>
+          <div class="mobile-menu" data-menu>
+             <div class="mobile-menushka">
+               <button class="mobile-close-btn" type="button" data-menu-close>
                     <svg class="svg-btn" width="8" height="8">
                       <use href="./images/icons.svg#icon-close"></use>
                     </svg>
-           <ul class="mobile-menu">
-             <li>
-               <a href="" class="link">Studio</a></li>
-             <li>
-               <a href="" class="link">Portfolio</a></li>
-             <li>
-               <a href="" class="link">Contacts</a></li>
+        <div class="mobile-nav">
+           <ul class="mobile-list list ">
+             <li class="mobile-item">
+               <a href="./index.html" class="link link-mobile">Studio</a></li>
+             <li class="mobile-item">
+               <a href="./portfolio.html" class="link link-mobile">Portfolio</a></li>
+             <li class="mobile-item">
+               <a href="" class="link link-mobile">Contacts</a></li>
            </ul>
-           <ul class="mobile-contacts">
-               <li>
-                <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </div>
+          <div class="mobile-socials">
+           <ul class="contact-mobile list">
+               <li class="mobile-item">
+                <a class="mobile-email link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                </li>
-               <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+               <li class="mobile-item">
+                <a class="link mobile-number" href="mailto:info@devstudio.com">info@devstudio.com</a>
                </li>
            </ul>
            <ul class="list social-list">
@@ -89,6 +94,7 @@
                  </a>
                </li>
              </ul>
+          </div>
          </div>
      </div>
      </header>
