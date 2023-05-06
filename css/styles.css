@@ -57,7 +57,9 @@ ul {
 }
 /* section  */
 .section{
-    padding: 120px 0;
+    /* padding: 120px 0; */
+    padding: 96px 0;
+
 }
 
 .section-do{
@@ -186,19 +188,38 @@ img{
  }
  /* item-info section strategy */
  .item-info{
-    width: calc((100% - 72px) / 4);
+    /* width: calc((100% - 3 * 24px) / 4);
+    /* width: calc((100% - 72px) / 4); */
+   /* margin-right: 24px; */ 
+  
  }
+
   .do-this{
     display: flex;
     gap: 24px; 
   }
+  @media only screen and (max-width: 767px){
   .cool-teams{
     display: flex;
     gap: 24px;
-  }
-  .need-info{
     display: flex;
-    gap: 24px;
+   flex-direction: column;
+   align-items: center;
+    padding: 0px;
+   gap: 72px;
+  }
+}
+  @media only screen and (max-width: 767px){
+    .need-info{
+        /* gap: 24px; */
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       row-gap: 72px;
+    
+      }
   }
 
   /* contacts */
@@ -238,8 +259,13 @@ img{
     color:var(--iris);
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.17 ;
-    margin-right: 76px
+    /* line-height: 1.17 ; */
+    line-height:21px;
+    /* margin-right: 76px; */
+    /* margin-right: 295px; */
+    margin-top: 25px;
+    margin-bottom: 22px;
+    margin-left: 16px;
     
 }
 .logo-item{
@@ -274,16 +300,24 @@ img{
 }
 
 .hero-header{
+    font-family: "Roboto";
      margin-left: auto; 
      margin-right: auto; 
-    margin-bottom: 48px;
-    width: 496px;
+    /* margin-bottom: 48px; */
+    margin-bottom: 72px;
+    padding-left: 54px;
+    padding-right: 54px;
+    /* width: 496px; */
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    /* font-size: 56px; */
+    font-size: 32px;
+    /* line-height: 1.07; */
+    line-height: 40px;
     letter-spacing: 0.02em;
     color: var(--white);
     max-width: 496px;
+    text-transform: capitalize;
+    text-align: center;
 
 }
 
@@ -341,6 +375,12 @@ img{
     border-radius: 0px 0px 4px 4px;  */
     padding-top: 32px;  
     padding-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
 }
 .list-icon{
     display: flex; 
@@ -494,10 +534,16 @@ justify-content: center;
 .title{
     letter-spacing: 0.02em;
     color: var(--grey);
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2 ;
+    text-align: center;
+    /* font-weight: 500; */
+    /* font-size: 20px; */
+    /* line-height: 1.2 ; */
     margin-bottom: 8px; 
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
 }
 
 
@@ -505,7 +551,12 @@ justify-content: center;
     letter-spacing: 0.02em;
     color:var(--slate);
     font-size: 16px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
+    line-height: 24px;
+    font-weight: 500;
+    padding-left:16px ;
+    padding-right: 16px;
+    text-align: left;
 
 }
 .text{
@@ -595,6 +646,12 @@ justify-content: center;
     background:var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 32px;
+    gap: 32px;
 }
 /* .goit-team:nth-child(4n) { */
     /* margin-right: 0; */
@@ -840,7 +897,10 @@ margin-bottom: 16px;
 }
 .social-list{
     display: flex;
-    gap: 16px; 
+    gap: 56px; 
+   margin-right: 60px;
+   
+    
 
 }
 .li-footer{
@@ -929,12 +989,17 @@ height: 40px;
     background-color: transparent;
     border: none;
     letter-spacing: 0;
+    margin-left: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 16px;
 }
 .menu-burger{
     stroke: var(--navy-blue);
 }
 
 .mobile-menu {
+    flex-direction: column;
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -967,11 +1032,12 @@ height: 40px;
     height: 24px;
     margin-left: auto;
     margin-bottom: 32px;
+    background: #E7E9FC;
 
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid var(--navy-blue-modal);
+    border: 1px solid #2E2F42;
   }
   .mobile-close-btn:hover,
   .mobile-close-btn:focus {
@@ -980,9 +1046,9 @@ height: 40px;
     fill: var(--white);
   }
   .mobile-nav {
+    margin-top: 80px;
     margin-bottom: auto;
   }
-
   .mobile-item + .mobile-item {
     margin-top: 40px;
   }
@@ -995,24 +1061,49 @@ height: 40px;
     text-transform: capitalize;
     color: var(--grey);
   }
-  .mobile-email:hover,
-  .mobile-.email:focus {
-    color: var(--ocean);
-  }
   .mobile-number:focus,
   .mobile-number:hover {
     color: var(--ocean);
   }
+  .mobile-email:hover,
+  .mobile-email:focus {
+    color: var(--ocean);
+  }
+  
   .mobile-number {
+    font-family: "Roboto";
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
     letter-spacing: 0.02em;
-    color: var(--slate);
+    text-transform: capitalize;
+    color:var(--iris);
+    margin-right: 35px;
+    margin-bottom: auto;
+  } 
+   .mobile-email{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color:var(--slate);
+  margin-right: 196px;
+  } 
+  .mobile-socials{
+    margin-right: 380px;
+    /* margin-left: 40px; */
+    margin-top: 1200px;
   }
   .contact-mobile {
-    margin-bottom: 48px;
+    margin-bottom: 48px; 
+    margin-right: 60px;
+   
+  }
+  .mobile-list{
+ 
   }
   @media only screen and ( max-width: 767px) {
     .menu{
@@ -1021,18 +1112,36 @@ height: 40px;
     .address{
         display: none;
     }
+    .strategy-icon{
+        display: none;
+    }
+    .section-do{
+        display: none;
+    }
   }
 
 /* Tablet Styless and >>> */
 @media only screen and ( min-width: 768px) {
     .container{
-   max-width: 735px;
+   max-width: 768px;
+    }
+    .strategy-icon{
+        display: none;
+    }
+    .section-do{
+        display: none;
     }
 }
 
 /* Dekstop Styless and >>> */
-@media only screen and ( min-width: 1200px) {
+@media only screen and ( min-width: 1158px) {
     .container{
-        max-width: 1159px;
+        max-width: 1158px;
+    }
+    .strategy-icon{
+        display: block;
+    }
+    .section-do{
+        display: block;
     }
 }
