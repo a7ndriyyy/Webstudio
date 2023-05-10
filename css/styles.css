@@ -41,13 +41,11 @@ ul {
   /* container */
 .container{
     /* Phone Styless and >>> */
-    min-width: 320px;
     max-width: 428px;
     margin-left: auto;
     margin-right: auto;
     padding-left:  16px;
     padding-right: 16px;
-   outline-offset: -2px;
 }
 
 
@@ -82,6 +80,19 @@ img{
     border-bottom: 1px solid var(--cornflower);
     box-shadow:0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
+}
+
+@media only screen and ( max-width:427px)  {
+    .container{
+        max-width: 427px;
+    }
+    .backdrop{
+    max-width: 320;
+    
+    }
+    .hero-header{
+        margin-bottom: 72px;
+    }
 }
 /* BORDER */
 /* nav  */
@@ -215,9 +226,6 @@ img{
     .icons-list{
         flex-wrap: wrap;
     }
-    .flex{
-        padding: 0 108px;
-    }
 }
   @media only screen and (max-width: 767px){
     .need-info{
@@ -310,23 +318,13 @@ img{
 }
 
 .hero-header{
-    font-family: "Roboto";
      margin-left: auto; 
      margin-right: auto; 
-    /* margin-bottom: 48px; */
-    margin-bottom: 72px;
-    padding-left: 54px;
-    padding-right: 54px;
-    /* width: 496px; */
     font-weight: 700;
-    /* font-size: 56px; */
     font-size: 32px;
-    /* line-height: 1.07; */
     line-height: 40px;
     letter-spacing: 0.02em;
     color: var(--white);
-    /* max-width: 496px; */
-    /* text-transform: capitalize; */
     text-align: center;
 
 }
@@ -383,6 +381,7 @@ img{
 .div-team{
     /* padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;  */
+    padding: 0px 0px 32px;
     padding-top: 32px;  
     padding-bottom: 32px;
     display: flex;
@@ -673,15 +672,12 @@ color: #2E2F42;
 
 .goit-team{  
     text-align: center;
-    /* width: calc((100% - 3 * 24px) / 4);  */
     background:var(--white);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 0px 32px;
     gap: 32px;
 }
 /* .goit-team:nth-child(4n) { */
@@ -1166,6 +1162,10 @@ height: 40px;
     }
     .hero-header{
         max-width: 496px;
+        font-size: 36px;
+        margin-bottom: 72px;
+        margin-left: 16px;
+        margin-right: 16px;
         text-transform: capitalize;
     }
     .strategy-icon{
@@ -1176,12 +1176,13 @@ height: 40px;
     }
     .title-text{
         letter-spacing: 0.02em;
-        padding-left: 16px; 
-        padding-right: 16px; 
         text-align: left; 
 }
     .section-do{
         display: none;
+    }
+    .div-team{
+        padding: 0px 0px 32px;
     }
     .goit-team{
         text-align: center;
@@ -1243,13 +1244,20 @@ height: 40px;
     .logo{
         margin-left: 0%;
     }
+    
+
     .menu{
      margin-left: 76px;
     }
+    .menu-list{
+        gap: 12px;
+      }
     .hero-header{
         font-size: 56px;
         line-height: 60px;
         margin-bottom: 36px;
+        margin-left: 110px;
+        margin-right: 110px;
     }
     .need-info{
     display: flex;
@@ -1257,14 +1265,11 @@ height: 40px;
     column-gap: 24px;
     row-gap: 72px;
     }
-    /* .title-text{
-        letter-spacing: 0.02em;
-        padding-left: 16px; 
-        padding-right: 16px; 
-        text-align: left; 
-} */
     .item-info{
         width: calc((100% - 24px) / 2);
+    }
+    .div-team{
+        padding: 0px 0px 32px;
     }
     .cool-teams{
         justify-content: center;
@@ -1283,7 +1288,7 @@ height: 40px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    /* padding: 0 108px; */
+    margin-left: 108px;
     }
     .footer-text{
         width: 264px;
@@ -1344,4 +1349,19 @@ height: 40px;
     .flex{
         justify-content: space-between;
     }
+}
+
+/* Images css */
+@media only screen and (max-width: 480px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+.hero {
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), 
+}
+}
+
+@media screen and (min-width: 481px){
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+.hero {
+    background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), 
+}
 }
