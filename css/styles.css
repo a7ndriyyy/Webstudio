@@ -99,6 +99,11 @@ img{
     max-width: 496px;
 }
 }
+@media only screen and ( min-width:428px)  {
+    .modal{
+        min-width: 408px;
+    }
+}
 /* BORDER */
 /* nav  */
 .nav-link{
