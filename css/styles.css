@@ -94,6 +94,11 @@ img{
         margin-bottom: 72px;
     }
 }
+@media only screen and ( max-width:1157px)  {
+   .hero-header{
+    max-width: 496px;
+}
+}
 /* BORDER */
 /* nav  */
 .nav-link{
@@ -1058,10 +1063,12 @@ height: 40px;
   .mobile-menushka {
     display: flex;
     flex-direction: column;
-    padding: 24px 24px 40px 40px;
+    padding: 32px;
     max-width:100%;
     height: 100%;
     background-color: var(--white);
+   
+
   }
 
   .mobile-menu.is-open {
@@ -1091,7 +1098,7 @@ height: 40px;
     fill: var(--white);
   }
   .mobile-nav {
-    margin-top: 80px;
+    /* margin-top: 80px; */
     margin-bottom: auto;
   }
   .mobile-item + .mobile-item {
@@ -1127,7 +1134,7 @@ height: 40px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:var(--iris);
-    margin-right: 35px;
+    /* margin-right: 35px; */
     margin-bottom: auto;
   } 
    .mobile-email{
@@ -1141,18 +1148,35 @@ height: 40px;
   margin-right: 196px;
   } 
   .mobile-socials{
-    margin-right: 380px;
-    /* margin-left: 40px; */
-    margin-top: 1200px;
+    margin-bottom: auto;
   }
-  .contact-mobile {
-    margin-bottom: 48px; 
-    margin-right: 60px;
+  
+   .contact-mobile {
+      margin-bottom: 40px;  
+     /* margin-right: 60px; */
    
-  }
-  .mobile-list{
+  } 
+  /* .mobile-list{
   margin-left: 100%;
-  }
+  } */
+  @media only screen and (max-width: 427px){
+   .social-list-above {
+    justify-content: space-between;
+    gap: 0;
+   }
+   .mobile-nav{
+    margin-bottom: 30px;
+   }
+   .mobile-email{
+    font-size: 20px;
+   }
+   .mobile-number{
+    font-size: 26px;
+   }
+   .contact-mobile{
+    margin-bottom: 30px;
+   }
+}
   @media only screen and ( max-width: 767px) {
     .menu{
      display: none;
@@ -1167,6 +1191,12 @@ height: 40px;
         margin-left: 16px;
         margin-right: 16px;
         text-transform: capitalize;
+    }
+    .backdrop{
+        top: 10%;
+        max-width: 392px;
+        background-color: rgba(46, 47, 66, 0.4);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     .strategy-icon{
         display: none;
@@ -1256,8 +1286,6 @@ height: 40px;
         font-size: 56px;
         line-height: 60px;
         margin-bottom: 36px;
-        margin-left: 110px;
-        margin-right: 110px;
     }
     .need-info{
     display: flex;
@@ -1353,15 +1381,19 @@ height: 40px;
 
 /* Images css */
 @media only screen and (max-width: 480px) {
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+
+
 .hero {
     background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), 
+}
 }
 }
 
 @media screen and (min-width: 481px){
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
 .hero {
     background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), 
+}
 }
 }
