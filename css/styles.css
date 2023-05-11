@@ -258,7 +258,7 @@ img{
 
 }
 .contact{
-    /* display: flex; */
+    display: flex;
     gap: 40px;
 }
 .menu{
@@ -288,13 +288,9 @@ img{
     color:var(--iris);
     font-weight: 800;
     font-size: 18px;
-    /* line-height: 1.17 ; */
     line-height:21px;
-    /* margin-right: 76px; */
-    /* margin-right: 295px; */
     margin-top: 25px;
     margin-bottom: 22px;
-    margin-left: 16px;
     
 }
 .logo-item{
@@ -392,8 +388,9 @@ img{
 .div-team{
     /* padding: 32px 16px;
     border-radius: 0px 0px 4px 4px;  */
-    padding: 0px 0px 32px;
+    /* padding: 0px 0px 32px; */
     padding-top: 32px;  
+    /* padding: 32px 0; */
     padding-bottom: 32px;
     display: flex;
     flex-direction: column;
@@ -544,7 +541,7 @@ justify-content: center;
     margin-right: auto;
     margin-left: auto;
     max-width: 1440px;
-    height: 600px;
+    /* height: 600px; */
 }
 
 
@@ -1048,7 +1045,6 @@ height: 40px;
     margin-left: auto;
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-right: 16px;
 }
 .menu-burger{
     stroke: var(--navy-blue);
@@ -1104,8 +1100,7 @@ height: 40px;
     fill: var(--white);
   }
   .mobile-nav {
-    /* margin-top: 80px; */
-    margin-bottom: auto;
+    margin-bottom:auto;
   }
   .mobile-item + .mobile-item {
     margin-top: 40px;
@@ -1151,14 +1146,13 @@ height: 40px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color:var(--slate);
-  margin-right: 196px;
   } 
-  .mobile-socials{
+  /* .mobile-socials{
     margin-bottom: auto;
   }
-  
+   */
    .contact-mobile {
-      margin-bottom: 40px;  
+      margin-bottom: 48px;  
      /* margin-right: 60px; */
    
   } 
@@ -1170,9 +1164,9 @@ height: 40px;
     justify-content: space-between;
     gap: 0;
    }
-   .mobile-nav{
+   /* .mobile-nav{
     margin-bottom: 30px;
-   }
+   } */
    .mobile-email{
     font-size: 20px;
    }
@@ -1189,6 +1183,9 @@ height: 40px;
     }
     .address{
         display: none;
+    }
+    .hero{
+        padding: 112px 0;
     }
     .hero-header{
         max-width: 496px;
@@ -1219,7 +1216,8 @@ height: 40px;
         display: none;
     }
     .div-team{
-        padding: 0px 0px 32px;
+        /* padding: 0px 0px 32px; */
+        padding: 32px 0;
     }
     .goit-team{
         text-align: center;
@@ -1278,6 +1276,7 @@ height: 40px;
         display: flex;
         align-items: center;
     }
+   
     .logo{
         margin-left: 0%;
     }
@@ -1286,7 +1285,7 @@ height: 40px;
     }
 
     .menu{
-     margin-left: 76px;
+     margin-left: 120px;
     }
     .menu-list{
         gap: 12px;
@@ -1306,7 +1305,8 @@ height: 40px;
         width: calc((100% - 24px) / 2);
     }
     .div-team{
-        padding: 0px 0px 32px;
+        /* padding: 0px 0px 32px; */
+        padding: 32px 0;
     }
     .cool-teams{
         justify-content: center;
@@ -1325,13 +1325,29 @@ height: 40px;
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 72px;
-    margin-left: 108px;
+  
     }
     .footer-text{
         width: 264px;
     }
     .footer-input{
         width: 264px;
+    }
+}
+@media only screen and ( min-width: 768px) and (max-width: 1157px) {
+    .hero{
+        padding: 112px 0;
+    }
+    
+    .email{
+        font-size: 12px;
+    }
+    .contact{
+        flex-direction: column;
+        gap: 12px;
+    }
+    .flex{
+        margin: 0 92px;
     }
 }
 
